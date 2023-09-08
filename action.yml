@@ -1,4 +1,4 @@
-name: "GH Automatic Releases"
+name: "Automatic Releases Extra"
 author: "marvinpinto"
 description: "Automate the GitHub release process with assets, changelogs, pre-releases, and more. Updated by Crowbarmaster."
 inputs:
