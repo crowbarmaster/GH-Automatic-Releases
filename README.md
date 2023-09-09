@@ -48,7 +48,7 @@ jobs:
         run: |
           echo "done!"
 
-      - uses: "crowbarmaster/GH-Automatic-Releases@latest"
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
@@ -89,7 +89,7 @@ jobs:
         run: |
           echo "done!"
 
-      - uses: "crowbarmaster/GH-Automatic-Releases@latest"
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
@@ -100,15 +100,14 @@ jobs:
 
 ## Supported Parameters
 
-| Parameter               | Description                                                | Default   |
-| ----------------------- | ---------------------------------------------------------- | --------- |
-| `repo_token`\*\*        | GitHub Action token, e.g. `"${{ secrets.GITHUB_TOKEN }}"`. | `null`    |
-| `draft`                 | Mark this release as a draft?                              | `false`   |
-| `prerelease`            | Mark this release as a pre-release?                        | `true`    |
-| `automatic_release_tag` | Tag name to use for automatic releases, e.g `latest`.      | `null`    |
-| `title`                 | Release title; defaults to the tag name if none specified. | Tag Name  |
-| `body`                  | Release body; defaults to changelog if none specified.     | Changelog |
-| `files`                 | Files to upload as part of the release assets.             | `null`    |
+| Parameter               | Description                                                | Default  |
+| ----------------------- | ---------------------------------------------------------- | -------- |
+| `repo_token`\*\*        | GitHub Action token, e.g. `"${{ secrets.GITHUB_TOKEN }}"`. | `null`   |
+| `draft`                 | Mark this release as a draft?                              | `false`  |
+| `prerelease`            | Mark this release as a pre-release?                        | `true`   |
+| `automatic_release_tag` | Tag name to use for automatic releases, e.g `latest`.      | `null`   |
+| `title`                 | Release title; defaults to the tag name if none specified. | Tag Name |
+| `files`                 | Files to upload as part of the release assets.             | `null`   |
 
 ## Outputs
 
@@ -133,7 +132,7 @@ The GitHub Actions framework allows you to trigger this (and other) actions on _
 Every commit that lands on master for this project triggers an automatic build as well as a tagged release called `latest`. If you don't wish to live on the bleeding edge you may use a stable release instead. See [releases](../../releases/latest) for the available versions.
 
 ```yaml
-- uses: "crowbarmaster/GH-Automatic-Releases@<VERSION>"
+- uses: "marvinpinto/action-automatic-releases@<VERSION>"
 ```
 
 ## How to get help

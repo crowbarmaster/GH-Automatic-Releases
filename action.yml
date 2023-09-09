@@ -1,6 +1,6 @@
-name: "Automatic Releases Extra"
+name: "Automatic Releases"
 author: "marvinpinto"
-description: "Automate the GitHub release process with assets, changelogs, pre-releases, and more. Updated by Crowbarmaster."
+description: "Automate the GitHub release process with assets, changelogs, pre-releases, and more"
 inputs:
   repo_token:
     description: "GitHub secret token"
@@ -18,7 +18,7 @@ inputs:
     default: true
   title:
     description: "Release title (for automatic releases)"
-    required: false  
+    required: false
   body:
     description: "Release body (for automatic releases)"
     required: false
