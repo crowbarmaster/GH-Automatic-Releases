@@ -1,6 +1,6 @@
-name: "Automatic Releases"
-author: "marvinpinto"
-description: "Automate the GitHub release process with assets, changelogs, pre-releases, and more"
+name: "CBGH Automatic Releases"
+author: "crowbarmaster/marvinpinto"
+description: "Automate the GitHub release process with assets, changelogs, pre-releases, and more. Original work by marvinpinto, updated and refactored by crowbarmaster."
 inputs:
   repo_token:
     description: "GitHub secret token"
