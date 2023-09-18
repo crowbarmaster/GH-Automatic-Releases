@@ -1,5 +1,5 @@
-name: "CBGH Automatic Releases"
-author: "crowbarmaster/marvinpinto"
+name: "Automatic Releases"
+author: "marvinpinto"
 description: "Automate the GitHub release process with assets, changelogs, pre-releases, and more"
 inputs:
   repo_token:
