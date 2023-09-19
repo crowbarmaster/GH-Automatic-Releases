@@ -106,6 +106,8 @@ jobs:
 | `repo_token`\*\*        | GitHub Action token, e.g. `"${{ secrets.GITHUB_TOKEN }}"`. | `null`    |
 | `draft`                 | Mark this release as a draft?                              | `false`   |
 | `prerelease`            | Mark this release as a pre-release?                        | `true`    |
+| `overwrite_tag`         | Do you aim to overwrite existing releases?                 | `true`    |
+| `generate_notes`        | Do you wish to have release note auto-generated?           | `true`    |
 | `automatic_release_tag` | Tag name to use for automatic releases, e.g `latest`.      | `null`    |
 | `title`                 | Release title; defaults to the tag name if none specified. | Tag Name  |
 | `body`                  | Release body; defaults to changelog if none specified.     | Changelog |
@@ -119,6 +121,7 @@ The following output values can be accessed via `${{ steps.<step-id>.outputs.<ou
 | ------------------------ | ------------------------------------------------------ | ------ |
 | `automatic_releases_tag` | The release tag this action just processed             | string |
 | `upload_url`             | The URL for uploading additional assets to the release | string |
+| `release_id`             | The ID that was returned for this release              | string |
 
 ### Notes:
 
