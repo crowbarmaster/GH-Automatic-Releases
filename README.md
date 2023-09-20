@@ -1,7 +1,8 @@
 # GitHub Automatic Releases
 
 This action simplifies the GitHub release process by automatically uploading assets, generating changelogs, handling pre-releases, and so on.
-Original work by marvinpinto, and updated and refactored by crowbarmaster.
+Original work by marvinpinto, updated and refactored by crowbarmaster.
+This action is fully compatable with marvinpinto's original work.
 
 ## Contents
 
@@ -12,7 +13,7 @@ Original work by marvinpinto, and updated and refactored by crowbarmaster.
 1. [How to get help](#how-to-get-help)
 1. [License](#license)
 
-> **NOTE**: The `marvinpinto/action-automatic-releases` repository is an automatically generated mirror of the [crowbarmaster/GHactions](https://github.com/crowbarmaster/GHactions) monorepo containing this action. Please file issues and pull requests over there.
+> **NOTE**: The `crowbarmaster/GH-automatic-releases` repository is an automatically generated mirror of the [crowbarmaster/GHactions](https://github.com/crowbarmaster/GHactions) monorepo containing this action. Please file issues and pull requests over there.
 
 ## Usage Examples
 
@@ -107,7 +108,7 @@ jobs:
 | `draft`                 | Mark this release as a draft?                              | `false`   |
 | `prerelease`            | Mark this release as a pre-release?                        | `true`    |
 | `overwrite_tag`         | Do you aim to overwrite existing releases?                 | `true`    |
-| `generate_notes`        | Do you wish to have release note auto-generated?           | `true`    |
+| `generate_notes`        | Do you wish to have release notes auto-generated?          | `true`    |
 | `automatic_release_tag` | Tag name to use for automatic releases, e.g `latest`.      | `null`    |
 | `title`                 | Release title; defaults to the tag name if none specified. | Tag Name  |
 | `body`                  | Release body; defaults to changelog if none specified.     | Changelog |
